@@ -41,10 +41,11 @@ class CourseSequence:
 class Program:
     __slots__ = ['name', 'program_type', 'prereqs', 'electives', 'notes']
 
-    def __init__(self, name, program_type):
+    def __init__(self, name, program_type, notes, prereq, electives):
         self.name = name
         self.program_type = program_type
-        self.preq = CourseSequence()
-        self.electives = CourseSequence()
+        self.notes = notes
+        self.prereqs = prereq
+        self.electives = electives
 
 
